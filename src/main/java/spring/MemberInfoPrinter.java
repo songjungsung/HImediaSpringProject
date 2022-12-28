@@ -12,6 +12,7 @@ public class MemberInfoPrinter {
 	public void setMemberDao(MemberDao memberDao) {
 		this.memberDao = memberDao;
 	}
+	
 	@Autowired
 	@Qualifier("printer")
 	public void setMemberPrinter(MemberPrinter printer) {

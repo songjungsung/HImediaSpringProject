@@ -26,5 +26,6 @@ public class Assembler{
 	}
 	public ChangePasswordService getChangePasswordService() {
 		return this.pwdSvc;
-	}
+	
+	}//aa
 }

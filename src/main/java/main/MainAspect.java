@@ -14,11 +14,11 @@ public class MainAspect {
 
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(AppCtx.class);
 
-		Calculator c = ctx.getBean("recucalculator", Calculator.class);
+		Calculator c = ctx.getBean("recucalculator", RecuCalculator.class);
 		System.out.println(c.factorial(10));
 		System.out.println(c.getClass().getName());
 		
-		Calculator c2 = ctx.getBean("implcalculator", Calculator.class);
+		Calculator c2 = ctx.getBean("implcalculator", ImplCalculator.class);
 		System.out.println(c2.factorial(10));
 		System.out.println(c2.getClass().getName());
 

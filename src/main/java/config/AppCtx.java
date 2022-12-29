@@ -52,6 +52,7 @@ public class AppCtx {
 	@Bean
 	public MemberInfoPrinter infoPrinter() {
 		MemberInfoPrinter infoPrinter = new MemberInfoPrinter();
+		infoPrinter.setMemberPrinter(memberPrinter2());
 		return infoPrinter;
 	}
 	
